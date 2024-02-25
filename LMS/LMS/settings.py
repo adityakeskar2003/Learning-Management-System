@@ -143,5 +143,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'asd@gmail.com'
 EMAIL_HOST_PASSWORD = '123445'
 
-KEY_ID = "rzp_test_a8kM7OZU4pElrz"
-KEY_SECRET = '59avkPnhV2OuZXCEmf9jcDI3'
+KEY_ID = ""
+KEY_SECRET = ''
