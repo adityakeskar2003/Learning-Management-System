@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load course_tags %}
+{% block content %}
+<div class="container py-8 py-lg-11">
+    <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+            <header>
+                <h1 class="entry-title text-center">Order Received</h1>
+                <p class="text-center">Thank You. Your order has been received</p>
+            </header>
+            <div class="row border border-info p-4">
+                <div class="col-lg-3">
+                    Order ID:<br>
+                    <strong>{{payment.order_id}}</strong>
+                </div>
+                <div class="col-lg-3">
+                    Date:<br>
+                    <strong>{{payment.date}}</strong>
+                </div>
+                <div class="col-lg-3">
+                    Total:<br>
+                    <strong>{{payment.course_price}}</strong>
+                </div>
+                <div class="col-lg-3">
+                    Payments Method:<br>
+                    <strong>Check Payments</strong>
+                </div>
+                <table>
+                    <tfoot>
+                        <tr>
+                            
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <br>
+
+        </div>
+    </div>
+</div>
