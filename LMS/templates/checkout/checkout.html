@@ -419,8 +419,9 @@
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
     var options = {
-        "key":"rzp_test_a8kM7OZU4pElrz",
-        "amount":"50000",
+        "key":"rzp_test_UNDfBvHjkEh63h",
+        "amount":"{{order.amount}}",
+        "currency":"{{order.currency}}",
         "name":"Skola Online course",
         "description":"Payment for {{course.title}}",
         "image":"https://example.com/your_logo",

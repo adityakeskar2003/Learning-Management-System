@@ -57,6 +57,8 @@ urlpatterns = [
 
     path('verify_payment',views.VERIFY_PAYMENT,name='verify_payment'),
 
-    path('course/watch-course/<slug:slug>',views.WATCH_COURSE,name='watch_course')
+    path('course/watch-course/<slug:slug>',views.WATCH_COURSE,name='watch_course'),
+
+    path('logout/', user_login.LOGOUT, name='logout'),
 
 ]+ static(settings.MEDIA_URL,document_root= settings.MEDIA_ROOT)
